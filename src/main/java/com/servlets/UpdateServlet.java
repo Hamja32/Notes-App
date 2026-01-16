@@ -57,7 +57,7 @@ public class UpdateServlet extends HttpServlet {
 		} catch (Exception e) {
 			e.printStackTrace();
 			// Error aane par wapas edit page par bhej sakte hain msg ke sath
-			response.getWriter().println("<h1>Error Updating Note: " + e.getMessage() + "</h1>");
+			response.getWriter().println("<h1>Error Updating Notes: " + e.getMessage() + "</h1>");
 		}
 	}
 }
