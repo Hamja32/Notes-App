@@ -4,4 +4,5 @@
 <style>
     .purple-bg { background-color: #6f42c1; color: white; }
     .card-hover:hover { transform: scale(1.02); transition: 0.3s; }
+   
 </style>

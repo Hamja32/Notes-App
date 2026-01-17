@@ -61,12 +61,8 @@ public class SaveNoteServlet extends HttpServlet {
 		
 		session.persist(note);
 		tx.commit();
-		System.out.print("Your data is inserted sucessfully");
-		
-		// 5. Response
-        response.setContentType("text/html");
-        PrintWriter out = response.getWriter();
-        //out.println("<h1 style='text-align:center;'>Note added successfully</h1>");
+		session.close();
+
 		response.sendRedirect(request.getContextPath() + "/index.jsp");
 	}
 

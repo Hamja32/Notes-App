@@ -1,4 +1,3 @@
-
 <%@page import="com.backend.FactoryProvider"%>
 <%@page import="com.backend.model.Note"%>
 <%@page import="java.util.List"%>
@@ -85,7 +84,7 @@
                         if(list.isEmpty()){
                     %>
                     	<div class="col-md-12 text-center mt-5">
-                    		<h4 class="text-success text-white">No notes available right now.</h4>
+                    		<h4 class=" text-white">No notes available right now.</h4>
                     		<a href="add_note.jsp" class="btn btn-outline-primary mt-3">Add your first note</a>
                     	</div>
                     <% 
@@ -125,12 +124,15 @@
                                     <a href="edit.jsp?note_id=<%= note.getId() %>" class="btn btn-outline-primary action-btn">
                                     	<i class="fa-solid fa-pen"></i> Edit
                                     </a>
+                                     <a href="note.jsp?note_id=<%= note.getId() %>" class="btn btn-outline-secondary action-btn">
+                                    	 Show Note
+                                    </a>
                                 </div>
                                 
                             </div>
                         </div>
                     </div>
-                    <% 
+                    <%
                         } 
                         s.close(); 
                     %>
@@ -140,4 +142,4 @@
         </div>
     </div>
 </body>
-</html>s
+</html>

@@ -4,7 +4,6 @@ import java.io.IOException;
 import java.util.Date;
 
 import jakarta.servlet.ServletException;
-import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
@@ -45,7 +44,7 @@ public class UpdateServlet extends HttpServlet {
 			note.setDescription(content);
 			
 			// Optional: Date ko bhi update kar dete hain taki pata chale abhi change hua hai
-			note.setCreated_at(new Date());
+			note.setUpdated_at(new Date());
 
 			// 5. Save changes (Commit karte hi Hibernate detect karega ki changes huye hain aur update query chalayega)
 			tx.commit();

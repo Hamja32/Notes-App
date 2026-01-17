@@ -15,7 +15,7 @@
     <div class="container mt-5">
         
         <%
-            // 1. URL se ID nikalna (jo show_notes.jsp se aayi hai)
+            // 1. URL se ID nikalna (jo index.jsp se aayi hai)
             int noteId = Integer.parseInt(request.getParameter("note_id"));
         
             // 2. Database se us ID ka Note object nikalna

@@ -19,17 +19,21 @@ public class Note {
 	private String description;
 	
 	private Date created_at;
+	private Date updated_at;
 	
+	public Date getUpdated_at() {
+		return updated_at;
+	}
+	public void setUpdated_at(Date updated_at) {
+		this.updated_at = updated_at;
+	}
 	public Date getCreated_at() {
 		return created_at;
 	}
 	public void setCreated_at(Date created_at) {
 		this.created_at = created_at;
 	}
-	@Override
-	public String toString() {
-		return "Note [id=" + id + ", title=" + title + ", description=" + description + "]";
-	}
+	
 	public int getId() {
 		return id;
 	}
