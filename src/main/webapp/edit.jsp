@@ -6,7 +6,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Edit Note</title>
+    <title>Edit Note Page</title>
     <%@include file="all_css.jsp" %>
 </head>
 <body>
