@@ -15,7 +15,7 @@
             <div class="col-md-6 offset-md-3">
                 <div class="card shadow">
                     <div class="card-header text-center purple-bg">
-                        <h3>Add Your Note</h3>
+                        <h3>Add New Note</h3>
                     </div>
                     <div class="card-body">
                         <form action="SaveNoteServlet" method="post">
